@@ -19,12 +19,12 @@
 <body class="font-basic">
     <header class=" sticky top-0 z-50 shadow-sm backdrop-blur-xl">
         <div class="bg-[#F9F7F3]">
-            <nav class="lg:max-w-screen-xl mx-auto pt-6 pb-14">
+            <nav class="lg:max-w-screen-xl mx-auto pt-6 pb-6 px-6 lg:pb-14">
                 <div class="navbar ">
                     <div class="navbar-start">
                     <button id="blog" class="btn bg-[#B4F461] rounded-lg px-8 py-2.5 text-xl">Blog</button>
                     </div>
-                    <div class="navbar-center lg:flex space-x-2.5">
+                    <div class="navbar-center hidden lg:flex space-x-2.5">
                      <img src="assets/logo.png" alt="">
                      <h3 class="font-semibold text-xl">Donate Bangladesh</h3>
                     </div>
@@ -132,7 +132,24 @@
          </div>
         </div>
     </main>
-    <script src="time.js"></script>
+    <!-- -->
+    <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+      <h3 class="text-4xl font-bold text-center font-bold">Congrates!</h3>
+      <div class="justify-center flex py-5"><img src="assets/coin.png"  alt=""></div>
+       <p class="py-4 text-center font-light">You Have Donated For Humankind</p>
+       <p class="text-2xl font-semibold text-center">Successfully</p>
+    <div class="modal-action flex justify-center">
+      <form method="dialog" >
+        <button class="btn text-lg">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    <!--  -->
+    <div class="border-2 border h-28 border-[#F9F7F3] bg-[#F9F7F3]">
+    </div>
+    <script src="timeModal.js"></script>
     <script src="style.js"></script>
     <script src="btn.js"></script>
 </body>
