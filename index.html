@@ -18,8 +18,8 @@
 </head>
 <body class="font-basic">
     <header class=" sticky top-0 z-50 shadow-sm backdrop-blur-xl">
-        <div class="bg-orange-50 bg-opacity-80">
-            <nav class="lg:max-w-screen-xl mx-auto pt-6 pb-6 px-6 lg:pb-14">
+        <div class="bg-[#F9F7F3] bg-opacity-80 border-0">
+            <nav class="lg:max-w-screen-xl mx-auto lg:py-6  py-3 px-6 lg:pb-14">
                 <div class="navbar ">
                     <div class="navbar-start">
                     <button id="blog" class="btn bg-[#B4F461] rounded-lg px-8 py-2.5 text-xl">Blog</button>
@@ -36,7 +36,7 @@
                   </div>
             </nav>
         </div>
-        <div class="lg:max-w-screen-xl mx-auto pt-16 pb-8 space-x-4 flex justify-center">
+        <div class="lg:max-w-screen-xl mx-auto lg:pt-16 py-4 lg:pb-8 space-x-4 flex justify-center">
             <button id="donation" class="btn bg-[#B4F461] rounded-lg px-8 py-2.5 text-xl">Donation</button>
                 <button id="history" class="btn rounded-lg px-8 py-2.5 text-xl">History</button>
             </div>
@@ -116,23 +116,20 @@
                 </div>
               </div>
         </div>
-        <!-- history part -->
+<!-- history part -->
         <div id="historyBtn" class="space-y-4 pt-8 hidden">
-         <div class="p-8 shadow-sm rounded-xl border space-y-3">
-            <p class="font-bold text-xl"><span id="tranjiction"> 0 </span> Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
-            <p class="font-light">Date : <span id="timeNow1"></span> GMT +0600 (Bangladesh Standard Time)</p>
+         <div id="cardontainer" class="space-y-3">
+            
          </div>
-         <div class="p-8 shadow-sm rounded-xl border space-y-3">
-            <p class="font-bold text-xl"><span id="tranjiction2"> 0 </span> Taka is Donated for Flood Relief in Feni, Bangladesh</p>
-            <p class="font-light">Date : <span id="timeNow2"></span> GMT +0600 (Bangladesh Standard Time)</p>
+         <div id="cardontainer2" class="space-y-3">
+            
          </div>
-         <div class="p-8 shadow-sm rounded-xl border space-y-3">
-            <p class="font-bold text-xl"><span id="tranjiction3"> 0 </span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-            <p class="font-light">Date : <span id="timeNow3"></span> GMT +0600 (Bangladesh Standard Time)</p>
+         <div id="cardontainer3" class="space-y-3">
+            
          </div>
         </div>
     </main>
-    <!-- -->
+    <!--modal -->
     <dialog id="my_modal_1" class="modal">
     <div class="modal-box">
       <h3 class="text-4xl font-bold text-center font-bold">Congrates!</h3>
@@ -146,12 +143,12 @@
     </div>
   </div>
 </dialog>
-    <!--  -->
-    <div class="border-2 border h-28 border-[#F9F7F3] bg-[#F9F7F3]">
+    <!-- modal end -->
+    <div class="lg:h-28 h-16 bg-opacity-80 bg-[#F9F7F3]">
     </div>
-    <script src="timeModal.js"></script>
     <script src="style.js"></script>
     <script src="btn.js"></script>
+    <script src="history.js"></script>
     <script src="math.js"></script>
     <script src="math-function.js"></script>
 </body>

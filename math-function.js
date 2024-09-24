@@ -6,7 +6,7 @@ function donatedBtnId (donatedBtnId){
     let donatedBalance = Number(dBalance);
     let cBalance = document.getElementById('cardBalance').innerText;
     let cardBalance = Number(cBalance);
-    if(donatedBalance > 0 ){
+    if(donatedBalance > 0 && donatedBalance <= mainBalance ){
         let finalMainBalance = mainBalance - donatedBalance;
         let finalCardBalance = donatedBalance + cardBalance;
         document.getElementById('tranjiction').innerText = donatedBalance; 
@@ -28,7 +28,7 @@ function donatedBtnIdTwo (donatedBtnId){
     let cBalance = document.getElementById('cardBalanceTwo').innerText;
     let cardBalance = Number(cBalance);
     
-    if(donatedBalance > 0 ){
+    if(donatedBalance > 0 && donatedBalance <= mainBalance ){
         let finalMainBalance = mainBalance - donatedBalance;
         let finalCardBalance = donatedBalance + cardBalance;
         document.getElementById('tranjiction2').innerText = donatedBalance; 
@@ -50,7 +50,7 @@ function donatedBtnIdThree (donatedBtnId){
     let cBalance = document.getElementById('cardBalanceThree').innerText;
     let cardBalance = Number(cBalance);
     
-    if(donatedBalance > 0 ){
+    if(donatedBalance > 0 && donatedBalance <= mainBalance ){
         let finalMainBalance = mainBalance - donatedBalance;
         let finalCardBalance = donatedBalance + cardBalance;
         document.getElementById('tranjiction3').innerText = donatedBalance; 
